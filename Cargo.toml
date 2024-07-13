@@ -1,0 +1,13 @@
+[package]
+name = "ykz-char-sorter"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 'z'
+
+[dependencies]
+console_error_panic_hook = "0.1.7"
+leptos = { version = "0.6.12", features = ["csr", "miniserde"] }
